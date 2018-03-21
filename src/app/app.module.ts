@@ -10,7 +10,7 @@ import { ProductService } from './products/product.service';
 import { HttpClientModule } from '@angular/common/http';
 import { ProductDetailComponent } from './products/product-detail.component';
 import { WelcomeComponent } from './home/welcome.component';
-import { RouterModule } from '@angular/router'; 
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [AppComponent,
@@ -26,7 +26,7 @@ import { RouterModule } from '@angular/router';
             FormsModule,
             RouterModule.forRoot([
               { path: 'products', component: ProductListComponent },
-              { path: 'product/:id', component: ProductDetailComponent },
+              { path: 'products/:id', component: ProductDetailComponent },
               { path: 'welcome', component: WelcomeComponent },
               { path: '', redirectTo: 'welcome', pathMatch: 'full'},
               { path: '**', redirectTo: 'welcome', pathMatch: 'full'}
