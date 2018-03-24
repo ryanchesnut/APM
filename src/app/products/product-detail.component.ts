@@ -8,8 +8,8 @@ import { Router } from '@angular/router';
   styleUrls: ['./product-detail.component.css']
 })
 export class ProductDetailComponent implements OnInit {
-    pageTitle: string = 'Product Detail';
-    product: IProduct;
+  pageTitle: string = 'Product Detail';
+  product: IProduct;
 
   constructor(private _route: ActivatedRoute, private _router: Router) { }
 
@@ -29,6 +29,6 @@ export class ProductDetailComponent implements OnInit {
       'price': 19.95,
       'starRating': 3.2,
       'imageUrl': 'http://openclipart.org/image/300px/svg_to_png/26215/Anonymous_Leaf_Rake.png'
-  };
-}
+    };
+  }
 }
